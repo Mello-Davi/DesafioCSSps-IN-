@@ -46,7 +46,7 @@ header a:hover{
         box-shadow: .25rem .1875rem .1875rem .1875rem rgba(0, 0, 0, 0.2);
     }
     .descricao{
-        width: 38.375rem;
+        width: auto;
         height: auto;
     }
 /*SECTION TOP JOGOS E HOBBIES*/
@@ -71,7 +71,7 @@ header a:hover{
     font-weight: bolder;
 }
 .hobbies{
-    align-items: flex-start;
+    align-items: flex-end;
     color: white;
     text-shadow: 0rem 0rem .3125rem #f6821f;
     width: auto;
@@ -277,13 +277,15 @@ header a:hover{
 }
 /*SECTION DO FEEDBACK*/
 .feedback{
+    width: 100%;
+    justify-self: center;
     display: flex;
     flex-direction: center;
     justify-content: center;
     background-color: #e03a3c;
 }
 .feedbackBox{
-    width: 73rem;
+    width: 80%;
     height: 14.75rem;
     font-weight: bold;
     color: black;
@@ -294,7 +296,7 @@ header a:hover{
 
 }
 .feedback input{
-    width: 70.5rem;
+    width: 100%;
     height: 3.5rem;
     background-color: hwb(359 23% 20%);
     font-size: 1.125rem;
@@ -346,6 +348,11 @@ footer button{
 }
 
 /*------------------------RESPONSIVIDADE----------------------------------*/
+@media (max-width: 1250px){
+    .hobbies{
+        align-items: flex-start;
+    }
+}
 @media (max-width: 1214px){
     .hobbiesETops{
         flex-direction: column;
@@ -356,14 +363,6 @@ footer button{
     .hobbiesETops h2{
         text-align: start;
     }
-    .feedbackBox{
-        width: 35.25rem;
-        align-items: center;
-    }
-    .feedback input{
-        width: 35.25rem;
-        align-items: center;
-    }
 }
 
 @media (max-width:646px) {
@@ -371,18 +370,23 @@ footer button{
         flex-direction: column;
         gap: 30px;
     }
-    .sobreMim p{
-        display: flex;
-    }
     .descricao{
         min-width: auto;
         max-width: auto;
         word-wrap: break-word;
     }
+    .hobbies{
+        align-items: flex-start;
+    }
     
 }
 
-@media (max-width:622){
-    /*mudar o tamanho do div.hobbies e do div.tops*/
-    
+@media (max-width:425){
+    .barraDeInicio{
+        justify-content: space-evenly;
+    }
+    .feedback input::placeholder{
+        color: white;
+        font-size: 50%;
+    }
 }
