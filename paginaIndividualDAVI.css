@@ -28,6 +28,34 @@ header a:hover{
     transition: 0.5s;
     color: rgb(36, 36, 36);
 }
+/*SECAO DO MENU HAMBUERGER*/
+
+#menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
 /*SECTION DO SOBRE MIM & DESCRIÇÃO, ALÉM DA FOTO*/
 .sobreMim{
     height: auto;
@@ -58,7 +86,7 @@ header a:hover{
     justify-content: center;
     align-items: center;
     gap: 3.125rem;
-    padding: 3.125rem;
+    padding: 3.125rem 1rem;
     flex-wrap: wrap;
 }
 /*TITULOS E SUBTITULOS DOS CARTOES*/
@@ -293,15 +321,15 @@ header a:hover{
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    gap: .625rem;
 
 }
 .feedback input{
-    width: 100%;
+    width: 95%;
     height: 3.5rem;
     background-color: hwb(359 23% 20%);
     font-size: 1.125rem;
-    margin: .3125rem;
-    padding-left: 1.25rem;
+    gap: .3125rem;
     color: white;
 }
 .feedback input::placeholder{
@@ -315,7 +343,13 @@ header a:hover{
     color: white;
     background-color: hwb(359 23% 20%);
 }
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .625rem;
 
+}
 /*RODAPÉ DO SITE*/
 footer{
     width: auto;
@@ -378,15 +412,78 @@ footer button{
     .hobbies{
         align-items: flex-start;
     }
-    
 }
 
-@media (max-width:425){
+@media (max-width:460px){
     .barraDeInicio{
         justify-content: space-evenly;
     }
     .feedback input::placeholder{
         color: white;
-        font-size: 50%;
+        font-size: .9375rem;
     }
 }
+
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 20vh;
+      right: 0rem;
+      background-color: #60bb44;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 150px;
+      z-index: 1;
+      align-items: center;
+    }
+  
+    .nav-links a {
+      padding: 1rem;
+      font-size: 1rem;
+      color: black;
+      text-align: right;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  
+    .barraDeInicio {
+      padding: 0 1.5rem;
+    }
+  
+    #menu-toggle:checked + .menu-icon span:nth-child(1) {
+      transform: rotate(45deg) translate(9px, 9px);
+    }
+  
+    #menu-toggle:checked + .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #menu-toggle:checked + .menu-icon span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+    .botao{
+        justify-content: center;
+        padding-right: 0;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.5rem;
+        gap: .625rem;
+
+    }
+    .feedback input{
+        width: 100%;
+    }
+
+  }
+
+  

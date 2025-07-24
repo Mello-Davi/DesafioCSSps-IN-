@@ -8,15 +8,27 @@
 </head>
 <body>
     <header>
-        <div class="barraDeInicio">
-            <h1>Davi Mello</h1>
-            <div>
-                <a href="./index.html">Home</a>
-                <a href="#">Contato</a>
-                <a href="#">Link</a>
-            </div>
-        </div>
-    </header>
+  <div class="barraDeInicio">
+    <h1>Davi Mello</h1>
+
+    <!-- Toggle invisível para o menu -->
+    <input type="checkbox" id="menu-toggle">
+    
+    <!-- Ícone do menu hambúrguer -->
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Links de navegação -->
+    <nav class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="#">Contato</a>
+      <a href="#">Link</a>
+    </nav>
+  </div>
+</header>
 
     <main>
         <section class="sobreMim">
@@ -95,7 +107,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer class="footer">
             <div class="redesSociais">
                 <img src="./imgs/imgsIcons/InstaIcon.png" alt="Icone do intagram">
                 <img src="./imgs/imgsIcons/linkedinIcon.png" alt="Icone do linkedin">
