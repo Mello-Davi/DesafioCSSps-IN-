@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*HEADER BARRA DE INICIO COM O NOME E LINKS*/
+.barraDeInicio{
+    height: 20vh;
+    background-color: #60bb44;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 6.25rem;
+    padding-right:6.25rem;
+    align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+/*links*/
+header a{
+    color: black;
+    text-decoration:none;
+    font-size: 1.5rem;
+    padding: .3125rem;
+}
+header a:hover{
+    font-size: 1.875rem;
+    font-weight: bold;
+    transition: 0.5s;
+    color: rgb(36, 36, 36);
+}
+
+/*SECTION DO SOBRE MIM & DESCRIÇÃO, ALÉM DA FOTO*/
+.sobreMim{
+    height: auto;
+    background-color: #fcb827;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem;
+    padding: 1.875rem;
+
+}
+
+
+    .fotoPerfil img{
+        width: 15.4375rem;
+        height: 15.4375rem;
+        border-radius: 50%;
+        box-shadow: .25rem .1875rem .1875rem .1875rem rgba(0, 0, 0, 0.2);
+    }
+
+    .descricao{
+        width: 38.375rem;
+        height: auto;
+    }
+
+/*SECTION TOP JOGOS E HOBBIES*/
+
+.hobbiesETops{ /*DEFINICOES DA SESSAO*/
+    background-color: #f6821f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    padding: 3.125rem;
+}
+
+/*TITULOS E SUBTITULOS DOS CARTOES*/
+.subtitle{
+    color: #009edd;
+    text-shadow: 0rem 0rem .3125rem #ffdcbce3;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.hobbies{
+    color: white;
+    text-shadow: 0rem 0rem .3125rem #f6821f;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .625rem;
+}
+.tops{
+    color: white;
+    text-shadow: 0rem 0rem .3125rem #f6821f;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .625rem;
+}
+.hobbiesETops :first-child p{
+    display: flex;
+    justify-content: end;
+}
+.hobbiesETops :last-child p{
+    display: flex;
+    justify-content: start;
+}
+.cartoes{
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
+}
+.cartoes > div{
+    width: 6.375rem;
+    height: 9.375rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.cartoes > div > div{
+    height: 2.5rem;
+    width: 1.25rem;
+    margin-bottom: 100%;
+    margin-left: -67%;
+    background-color: #e03a3c;
+    border-radius: .3125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: .25rem .25rem .25rem 0 rgba(0, 0, 0, 0.596);;
+    p{
+        color: black;
+        font-size: .9375rem;
+    }
+}
+
+.a{ /*REVERSAO DOS CAROTES DE HOBBIES*/
+    flex-direction: row-reverse;
+}
+
+/*CARTOES HOBBIES*/
+.bike{
+    background-image: url(imgs/imgsHobbies/bikeHobbieF.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.desenhar{
+    background-image: url(imgs/imgsHobbies/desenharHobbieF.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.piano{
+    background-image: url(imgs/imgsHobbies/pianoHobbieF.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.livro{
+    background-image: url(imgs/imgsHobbies/lerHobbieF.webp);
+    background-position: bottom;
+    background-size: cover;
+}
+.videogame{
+    background-image: url(imgs/imgsHobbies/jogarHobbieF.webp);
+    background-position: bottom;
+    background-size: cover;
+}
+/*CARTOES DE TOPS JOGOS*/
+.top1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(imgs/imgsTop5/top1F.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.top2{
+    background-image: url(imgs/imgsTop5/top2F.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.top3{
+    background-image: url(imgs/imgsTop5/top3F.avif);
+    background-position: bottom;
+    background-size: cover;
+}
+.top4{
+    background-image: url(imgs/imgsTop5/top4F.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.top5{
+    background-image: url(imgs/imgsTop5/top5F.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+/*HOVER DE CADA CARTAO*/
+.top1:hover{
+    transform: translate(.1875rem, -.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.top2:hover{
+    transform: translate(.1875rem, -.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.top3:hover{
+    transform: translate(.1875rem, -.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.top4:hover{
+    transform: translate(.1875rem, -.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.top5:hover{
+    transform: translate(.1875rem, -.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.bike:hover{
+    transform: translate(.1875rem, -0.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.desenhar:hover{
+    transform: translate(.1875rem, -0.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.piano:hover{
+    transform: translate(.1875rem, -0.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.livro:hover{
+    transform: translate(.1875rem, -0.1875rem);
+    transition: ease-in-out 0.5s;
+}
+.videogame:hover{
+    transform: translate(.1875rem, -0.1875rem);
+    transition: ease-in-out 0.5s;
+}
+
+/*EMBLEMAS DOS TOPS*/
+.emblemaTop1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 1.1875rem;
+    height: 2.75rem;
+    border-bottom-left-radius: .3125rem;
+    border-bottom-right-radius: .3125rem;
+    background-color: #e03a3c;
+}
+.emblemaTop2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 1.1875rem;
+    height: 2.75rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #e03a3c;
+}
+.emblemaTop3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 1.1875rem;
+    height: 2.75rem;
+    border-bottom-left-radius: .3125rem;
+    border-bottom-right-radius: .3125rem;
+    background-color: #e03a3c;
+}
+/*SECTION DO FEEDBACK*/
+.feedback{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    background-color: #e03a3c;
+}
+.feedbackBox{
+    width: 73rem;
+    height: 14.75rem;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+}
+.feedback input{
+    width: 70.5rem;
+    height: 3.5rem;
+    background-color: hwb(359 23% 20%);
+    font-size: 1.125rem;
+    margin: .3125rem;
+    padding-left: 1.25rem;
+    color: white;
+}
+.feedback input::placeholder{
+    color: white;
+    font-size: 1.125rem;
+}
+.feedback button{
+    width: 7.9375rem;
+    height: 2.4375rem;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: hwb(359 23% 20%);
+}
+
+/*RODAPÉ DO SITE*/
+footer{
+    width: auto;
+    height: auto;
+    background-color: #953d94;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    align-items: center;
+}
+    .redesSociais img{
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+        width: 2rem;
+        height: 2rem;
+        margin: .3125rem;
+    }
+footer button{
+    border-radius: .3125rem;
+    background-color: hsl(301, 42%, 31%);
+    padding: .3125rem;
+}
+.botao{
+    display: flex;
+    justify-content: end;
+    padding-right: .625rem;
+}
+
+/*------------------------RESPONSIVIDADE----------------------------------*/
+@media (max-width: 1214px){
+    .hobbiesETops{
+        flex-direction: column;
+        gap: 1.875rem;
+        padding-top: 1.25rem;
+        padding-bottom: 2.5rem;
+    }
+    .hobbiesETops h2{
+        text-align: start;
+    }
+    .feedbackBox{
+        width: 35.25rem;
+        align-items: center;
+    }
+    .feedback input{
+        width: 35.25rem;
+        align-items: center;
+    }
+}
+
+@media (max-width:646px) {
+    .sobreMim{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sobreMim p{
+        display: flex;
+    }
+    .descricao{
+        min-width: auto;
+        max-width: auto;
+        word-wrap: break-word;
+    }
+    
+}
+
+@media (max-width:622){
+    /*mudar o tamanho do div.hobbies e do div.tops*/
+    .cartoes{
+        flex-wrap: wrap;
+    }
+}
